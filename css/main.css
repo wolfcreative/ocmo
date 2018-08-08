@@ -1,6 +1,11 @@
+/* Created with love by wolfcreative.ru */
 @font-face{font-family:'Roboto Regular';src:url(RobotoRegular.eot);src:local(RobotoRegular),local(RobotoRegular),url(RobotoRegular.eot?#iefix) format("embedded-opentype"),url(RobotoRegular.woff) format("woff"),url(RobotoRegular.ttf) format("truetype");font-weight:400;font-style:normal}
 @font-face{font-family:'Roboto Bold';src:url(RobotoBold.eot);src:local('Roboto Bold'),local(RobotoBold),url(RobotoBold.eot?#iefix) format("embedded-opentype"),url(RobotoBold.woff) format("woff"),url(RobotoBold.ttf) format("truetype");font-weight:400;font-style:normal}
 @font-face{font-family:'Roboto Light';src:url(RobotoLight.eot);src:local(RobotoLight),local(RobotoLight),url(RobotoLight.eot?#iefix) format("embedded-opentype"),url(RobotoLight.woff) format("woff"),url(RobotoLight.ttf) format("truetype");font-weight:400;font-style:normal}
 @font-face{font-family:'RobotoCondensed Regular';src:url(RobotoCondensedRegular.eot);src:local('RobotoCondensed Regular'),local(RobotoCondensedRegular),url(RobotoCondensedRegular.eot?#iefix) format("embedded-opentype"),url(RobotoCondensedRegular.woff) format("woff"),url(RobotoCondensedRegular.ttf) format("truetype");font-weight:400;font-style:normal}
 @font-face{font-family:'Pacifico';src:url(Pacifico-Regular.eot);src:local('Pacifico Regular'),local(Pacifico-Regular),url(Pacifico-Regular.eot?#iefix) format("embedded-opentype"),url(Pacifico-Regular.woff) format("woff"),url(Pacifico-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
 
+body{font-family:'Roboto Regular',sans-serif;font-size:14px;line-height:24px;color:#111}
+.uk-container{max-width:1140px}
+
+header{height:160px}
