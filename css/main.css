@@ -1,11 +1,20 @@
 /* Created with love by wolfcreative.ru */
-@font-face{font-family:'Roboto Regular';src:url(RobotoRegular.eot);src:local(RobotoRegular),local(RobotoRegular),url(RobotoRegular.eot?#iefix) format("embedded-opentype"),url(RobotoRegular.woff) format("woff"),url(RobotoRegular.ttf) format("truetype");font-weight:400;font-style:normal}
-@font-face{font-family:'Roboto Bold';src:url(RobotoBold.eot);src:local('Roboto Bold'),local(RobotoBold),url(RobotoBold.eot?#iefix) format("embedded-opentype"),url(RobotoBold.woff) format("woff"),url(RobotoBold.ttf) format("truetype");font-weight:400;font-style:normal}
-@font-face{font-family:'Roboto Light';src:url(RobotoLight.eot);src:local(RobotoLight),local(RobotoLight),url(RobotoLight.eot?#iefix) format("embedded-opentype"),url(RobotoLight.woff) format("woff"),url(RobotoLight.ttf) format("truetype");font-weight:400;font-style:normal}
-@font-face{font-family:'RobotoCondensed Regular';src:url(RobotoCondensedRegular.eot);src:local('RobotoCondensed Regular'),local(RobotoCondensedRegular),url(RobotoCondensedRegular.eot?#iefix) format("embedded-opentype"),url(RobotoCondensedRegular.woff) format("woff"),url(RobotoCondensedRegular.ttf) format("truetype");font-weight:400;font-style:normal}
-@font-face{font-family:'Pacifico';src:url(Pacifico-Regular.eot);src:local('Pacifico Regular'),local(Pacifico-Regular),url(Pacifico-Regular.eot?#iefix) format("embedded-opentype"),url(Pacifico-Regular.woff) format("woff"),url(Pacifico-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Roboto Regular';src:url(../fonts/RobotoRegular.eot);src:local(RobotoRegular),local(RobotoRegular),url(../fonts/RobotoRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoRegular.woff) format("woff"),url(../fonts/RobotoRegular.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Roboto Bold';src:url(../fonts/RobotoBold.eot);src:local('Roboto Bold'),local(RobotoBold),url(../fonts/RobotoBold.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoBold.woff) format("woff"),url(../fonts/RobotoBold.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Roboto Light';src:url(../fonts/RobotoLight.eot);src:local(RobotoLight),local(RobotoLight),url(../fonts/RobotoLight.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoLight.woff) format("woff"),url(../fonts/RobotoLight.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'RobotoCondensed Regular';src:url(../fonts/RobotoCondensedRegular.eot);src:local('RobotoCondensed Regular'),local(RobotoCondensedRegular),url(../fonts/RobotoCondensedRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoCondensedRegular.woff) format("woff"),url(../fonts/RobotoCondensedRegular.ttf) format("truetype");font-weight:400;font-style:normal}
+@font-face{font-family:'Pacifico';src:url(../fonts/Pacifico-Regular.eot);src:local('Pacifico Regular'),local(Pacifico-Regular),url(../fonts/Pacifico-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Pacifico-Regular.woff) format("woff"),url(../fonts/Pacifico-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
 
 body{font-family:'Roboto Regular',sans-serif;font-size:14px;line-height:24px;color:#111}
+b, strong{font-weight:normal;font-family:'Roboto Bold',sans-serif}
 .uk-container{max-width:1140px}
 
 header{height:160px}
+header>.uk-container,header>.uk-container>.uk-grid{height:100%}
+header .logo a{display:inline-block}
+header .logo .text{max-width:214px;vertical-align:middle;font:18px/22px 'Roboto Bold',sans-serif;color:#233764;text-transform:uppercase;margin-left:20px}
+header .tagline p{margin:0;font:18px/normal 'Roboto Light',sans-serif;color:#23376C}
+header .tagline p span{display:block;font-size:14px;color:#6B6B6B}
+header .info .info_wrapper{max-width:180px;text-align:left;display:inline-block;margin-left:15px}
+header .info .info_wrapper a{font:14px/normal 'Roboto Bold',sans-serif;color:#23376C}
+header .info .info_wrapper span{font-size:10px;color:#6b6b6b;display:block}
