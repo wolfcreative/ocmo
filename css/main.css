@@ -6,8 +6,9 @@
 @font-face{font-family:'Pacifico';src:url(../fonts/Pacifico-Regular.eot);src:local('Pacifico Regular'),local(Pacifico-Regular),url(../fonts/Pacifico-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Pacifico-Regular.woff) format("woff"),url(../fonts/Pacifico-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
 
 body{font-family:'Roboto Regular',sans-serif;font-size:14px;line-height:24px;color:#111}
-b, strong{font-weight:normal;font-family:'Roboto Bold',sans-serif}
+b, strong{color:#222;font-weight:normal;font-family:'Roboto Bold',sans-serif}
 .uk-container{max-width:1140px}
+ul>li>a{font-size:16px}
 
 header>.first{height:160px}
 header>.first>.uk-grid{height:100%}
@@ -64,24 +65,34 @@ header nav .uk-button-default{padding:0 12px}
 .search-box .uk-search{width:242px}
 }
 
-.uk-card-blue{width:262px;background:#fff}
+.uk-card-blue{background:#fff}
 .uk-card-blue .uk-card-header{background:#23376C;padding:11px 15px 12px}
-.uk-card-blue .uk-card-header h3{color:#fff}
+.uk-card-blue .uk-card-header h4{color:#fff}
 .uk-card-blue .uk-card-body{padding:6px 4px}
 .uk-card-blue .uk-card-body ul li{margin:0}
 .uk-card-blue .uk-card-body ul a{font:14px 'RobotoCondensed Regular',sans-serif;color:#23376C;padding:6px 10px;display:block;text-decoration:none}
 .uk-card-blue .uk-card-body ul li.active,.uk-card-blue .uk-card-body ul a:hover{background:#ededef}
+
+.main>div{background:#fff;padding-top:30px;padding-bottom:40px}
+.main>div:nth-child(odd){background:#EDEDED}
+
+aside{width:262px}
 @media (max-width:1100px){
-.uk-card-blue{width:242px}
+aside{width:242px}
 }
 
-.maiden{position:relative;padding-top:30px;padding-bottom:30px;background:url(../images/bg_main_page.jpg) no-repeat top center / cover}
-.maiden:after{content:'';width:100%;height:100%;top:0;position:absolute;z-index:1;background:rgba(255,255,255,0.7)}
+.content p{color:#333;font:16px/23px 'Roboto Light',sans-serif}
+@media (max-width:1100px){
+.content p{font-size:14px}
+}
+
+.maiden{position:relative;background:url(../images/bg_main_page.jpg) no-repeat top center / cover!important}
+.maiden:after{content:'';width:100%;height:100%;top:0;position:absolute;z-index:1;background:rgba(255,255,255,0.8)}
 .maiden>div{position:relative;z-index:2}
 
 .shade{width:100%;box-shadow:0 4px 4px rgba(0,0,0,0.25)}
 .shade:after{content:'';width:100%;height:100%;top:0;left:0;position:absolute;z-index:1;background:linear-gradient(to bottom,rgba(255,255,255,0.2) 7%,rgba(255,255,255,0.3) 18%,rgba(255,255,255,0.4) 34%,rgba(35,55,108,0.9) 100%)}
-.shade>a{z-index:2;font:18px 'Roboto Regular',sans-serif;color:#fff;padding:15px 20px;text-decoration:none}
+.shade>a{min-height:48px;z-index:2;font:18px 'Roboto Regular',sans-serif;color:#fff;padding:15px 20px;text-decoration:none}
 .shade .share{z-index:2;top:10px;right:10px}
 .shade .share i{color:#fff;cursor:pointer}
 .shade img{width:100%}
@@ -89,7 +100,7 @@ header nav .uk-button-default{padding:0 12px}
 .shade>a{padding:12px}
 }
 
-.enter-lk .uk-button-danger{width:164px;margin-top:7px;text-transform:none;font-size:18px;line-height:41px}
+.enter-lk .uk-button-danger{width:164px;margin-top:11px;text-transform:none;font-size:18px;line-height:41px}
 .enter-lk .second{color:#fff}
 .enter-lk .second .uk-font-pacifico{font-size:36px;line-height:36px;color:#ef4c4d;display:inline-block}
 .enter-lk .second .uk-text-medium{margin-top:4px}
@@ -97,6 +108,24 @@ header nav .uk-button-default{padding:0 12px}
 .enter-lk .second .uk-font-pacifico{font-size:32px;line-height:34px}
 .enter-lk .second .uk-text-medium{margin-top:8px}
 }
+
+.licenses .uk-inline{box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)}
+
+.uk-accordion>li{border-top:1px solid #C4C4C4;padding:25px 0 10px}
+.uk-accordion-title{font-size:24px;color:#000}
+
+.news{padding-right:10px;margin-bottom:20px!important}
+.news .date{width:67px;height:67px;background:#ee4d4d;color:#fff;font-family:'Roboto Bold',sans-serif;text-align:center;line-height:16px;margin-right:10px}
+.news .date .day{font-size:32px;line-height:40px}
+.news .date .monthyear{font-size:18px}
+.news h3{font:23px/27px 'Roboto Bold',sans-serif}
+.news p{color:#6B6B6B}
+.news a{margin-top:15px}
+@media (max-width:767px){
+.news a{margin-top:0}
+}
+
+.news.small h3{color:#23376C}
 
 footer{background:#23376C;color:#fff;font-size:13px}
 footer .first{padding:46px 0;line-height:20px}
@@ -121,6 +150,7 @@ footer .first img{float:left;margin:0 20px 20px 0}
 footer .first .text{max-width:500px;margin:10px 0 0}
 }
 
+/* Styles for search-bar in offcanvas */
 #offcanvas-menu .search-box .uk-search-default .uk-search-input{background:transparent;font-size:12px;padding:8px 28px 8px 5px;border:1px solid #555}
 
 /* Add to UiKit */
@@ -128,6 +158,11 @@ footer .first .text{max-width:500px;margin:10px 0 0}
 .uk-font-pacifico{font-family:'Pacifico',sans-serif}
 .uk-text-medium{font-size:1.1rem}
 .uk-section-secondary{background:#383838;padding-top:50px;padding-bottom:50px}
+.uk-breadcrumb{margin-bottom:15px}
+.uk-list-pdf>li{padding-left:35px;position:relative}
+.uk-list-pdf>li:before{content:'';width:23px;height:23px;position:absolute;left:0;top:0;background:url(../images/pdf.png) no-repeat center / cover}
+.uk-dotnav > * > *{background:#C4C4C4;border-color:#C4C4C4}
+.uk-dotnav > .uk-active > *{background:#23376C}
 
 /* Buttons */
 .uk-button-default{background:#fff;color:#333;border-radius:1px}
@@ -135,6 +170,25 @@ footer .first .text{max-width:500px;margin:10px 0 0}
 .uk-button-danger{background:#ef4c4d;border-radius:2px}
 .uk-button-danger:hover,.uk-button-danger:focus{background:#d14040}
 
+/* Link */
+.uk-link-red{display:inline-block;font:16px/23px 'Roboto Regular',sans-serif;text-transform:uppercase;color:#ee4d4d;text-decoration:underline}
+.uk-link-red:hover,.uk-link-red:focus{color:#c73c3c;text-decoration:none}
 
-h3{font:20px 'Roboto Regular',sans-serif}
+/* Titles */
+h1,h2,h3,h4,h5{color:#000}
+h2{max-width:700px;font:42px/52px 'Roboto Regular',sans-serif;margin:15px 0 35px}
+h3{font:24px/30px 'Roboto Regular',sans-serif}
+h4{font:20px 'Roboto Regular',sans-serif}
+.uk-h2{font:32px 'Roboto Regular',sans-serif;margin-top:20px}
 .uk-h4{font:18px 'Roboto Bold',sans-serif;text-transform:uppercase}
+.uk-h-blue{color:#23376C}
+@media (max-width:1280px){
+h2{font-size:34px;line-height:44px}
+h3{font-size:22px;line-height:28px}
+.uk-h2{font-size:26px}
+}
+@media (max-width:439px){
+h2{font-size:28px;line-height:38px}
+h3{font-size:20px;line-height:26px}
+.uk-h2{font-size:22px}
+}
