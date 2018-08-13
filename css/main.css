@@ -168,8 +168,8 @@ footer .first .text{max-width:500px;margin:10px 0 0}
 .uk-breadcrumb{margin-bottom:15px}
 .uk-list-pdf>li{padding-left:35px;position:relative}
 .uk-list-pdf>li:before{content:'';width:23px;height:23px;position:absolute;left:0;top:0;background:url(../images/pdf.png) no-repeat center / cover}
-.uk-dotnav > * > *{background:#C4C4C4;border-color:#C4C4C4}
-.uk-dotnav > .uk-active > *{background:#23376C}
+.uk-dotnav>*>*{background:#C4C4C4;border-color:#C4C4C4}
+.uk-dotnav>.uk-active>*{background:#23376C}
 .uk-input, .uk-select, .uk-textarea{border:1px solid #C4C4C4;border-radius:2px}
 .uk-form-label{color:#6B6B6B}
 
