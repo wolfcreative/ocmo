@@ -5,10 +5,12 @@
 @font-face{font-family:'RobotoCondensed Regular';src:url(../fonts/RobotoCondensedRegular.eot);src:local('RobotoCondensed Regular'),local(RobotoCondensedRegular),url(../fonts/RobotoCondensedRegular.eot?#iefix) format("embedded-opentype"),url(../fonts/RobotoCondensedRegular.woff) format("woff"),url(../fonts/RobotoCondensedRegular.ttf) format("truetype");font-weight:400;font-style:normal}
 @font-face{font-family:'Pacifico';src:url(../fonts/Pacifico-Regular.eot);src:local('Pacifico Regular'),local(Pacifico-Regular),url(../fonts/Pacifico-Regular.eot?#iefix) format("embedded-opentype"),url(../fonts/Pacifico-Regular.woff) format("woff"),url(../fonts/Pacifico-Regular.ttf) format("truetype");font-weight:400;font-style:normal}
 
+/* Another */
 body{font-family:'Roboto Regular',sans-serif;font-size:14px;line-height:24px;color:#111}
-b, strong, .uk-text-bold{color:#222;font-weight:normal;font-family:'Roboto Bold',sans-serif}
+b,strong,.uk-text-bold{color:#222;font-weight:400;font-family:'Roboto Bold',sans-serif}
 .uk-container{max-width:1140px}
 ul>li>a{font-size:16px}
+blockquote{min-height:55px;padding-left:30px;border-left:5px solid #ee4d4d;font:16px/23px 'Roboto Light',sans-serif;color:#686868}
 
 header>.first{height:160px}
 header>.first>.uk-grid{height:100%}
@@ -112,17 +114,29 @@ aside{width:242px}
 
 .licenses .uk-inline{box-shadow:0 4px 4px rgba(0,0,0,0.25)}
 
+.latest-news h2{font-size:24px;line-height:28px}
+
 .uk-accordion>li{border-top:1px solid #C4C4C4;padding:25px 0 10px}
 .uk-accordion-title{font-size:24px;color:#000}
 
-.news{padding-right:10px;margin-bottom:20px!important}
-.news .date{width:67px;height:67px;background:#ee4d4d;color:#fff;font-family:'Roboto Bold',sans-serif;text-align:center;line-height:16px;margin-right:10px}
+.news .date{width:67px;height:67px;background:#ee4d4d;color:#fff;font-family:'Roboto Bold',sans-serif;text-align:center;line-height:16px;margin-right:8px}
 .news .date .day{font-size:32px;line-height:40px}
 .news .date .monthyear{font-size:18px}
 .news h3{font:23px/27px 'Roboto Bold',sans-serif}
 .news p{color:#6B6B6B}
-.news a{margin-top:15px}
+.news .social-group{height:90px}
+.news .social-group .uk-icon{color:#777}
+.news .social-group>span{display:inline-block;font:20px/28px 'Roboto Light',sans-serif;margin:5px 20px 5px 15px}
+.news .topic-meta>*{display:inline-block;font:11px/14px 'Roboto Light',sans-serif;margin-right:10px;vertical-align:middle;color:#23376C}
+.news .topic-meta i{margin:0 5px 2px 0;color:#6B6B6B}
+.news .topic-meta span{display:inline-block}
+.news.small{padding-right:10px;margin-bottom:20px!important;color:#23376C}
 .news.small h3{color:#23376C}
+.news.small .uk-link-red{margin-top:15px}
+.news.large .wrapper{border-bottom:1px solid #e5e5e5}
+.news.large h1{font-size:28px;line-height:34px}
+.news.large h2{font-size:24px;line-height:28px}
+.news.large h3{font-size:20px;line-height:26px}
 @media (max-width:767px){
 .news a{margin-top:0}
 }
@@ -172,6 +186,12 @@ footer .first .text{max-width:500px;margin:10px 0 0}
 .uk-dotnav>.uk-active>*{background:#23376C}
 .uk-input, .uk-select, .uk-textarea{border:1px solid #C4C4C4;border-radius:2px}
 .uk-form-label{color:#6B6B6B}
+.uk-breadcrumb>*>*{font:14px 'Roboto Light',sans-serif;color:#999}
+.uk-breadcrumb>:nth-child(n+2):not(.uk-first-column):before{margin:0 15px}
+.uk-padding-top{padding-top:20px!important}
+.uk-padding-bottom{padding-bottom:20px!important}
+.uk-pagination>*>*{width:27px;height:auto;font:16px/27px 'Roboto Regular',sans-serif;padding:0;border-radius:3px;text-align:center;color:#23376C}
+.uk-pagination .uk-active>*,.uk-pagination>li:hover>*{background:#ee4d4d;color:#fff}
 
 /* Buttons */
 .uk-button-default{background:#fff;color:#333;border-radius:1px}
@@ -190,6 +210,7 @@ h1,h2,h3,h4,h5{color:#000}
 h2{max-width:700px;font:42px/52px 'Roboto Regular',sans-serif;margin:15px 0 35px}
 h3{font:24px/30px 'Roboto Regular',sans-serif}
 h4{font:20px 'Roboto Regular',sans-serif}
+.uk-h1{font:42px/49px 'Roboto Regular',sans-serif}
 .uk-h2{font:32px 'Roboto Regular',sans-serif;margin-top:20px}
 .uk-h4{font:18px 'Roboto Bold',sans-serif;text-transform:uppercase}
 .uk-h-blue{color:#23376C}
